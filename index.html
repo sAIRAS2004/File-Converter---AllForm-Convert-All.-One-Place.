@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AllForms – Convert All. One Place.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="landing" id="landing">
+    <div class="overlay">
+      <h1 class="logo-text">AllForms</h1>
+      <p class="tagline">Convert All. One Place.</p>
+    </div>
+  </div>
+
+  <div class="homepage" id="homepage">
+    <header class="header">
+      <h1>AllForms</h1>
+      <p class="subtitle">One tool. Every format.</p>
+    </header>
+
+    <section class="card-grid">
+      <div class="card" id="textCard">
+        <h2>📄 Text</h2>
+        <div class="drop-area" id="textDrop">
+          <p>Drag & drop or click to upload</p>
+          <input type="file" id="textInput" accept=".pdf,.docx,.txt,.html" />
+        </div>
+        <select id="textFormat">
+          <option value="">Convert to...</option>
+          <option value="txt">TXT</option>
+          <option value="pdf">PDF</option>
+          <option value="docx">DOCX</option>
+          <option value="html">HTML</option>
+        </select>
+        <button onclick="convertFile('textInput', 'textFormat')">Convert</button>
+      </div>
+      <div class="card" id="audioCard">
+        <h2>🎵 Audio</h2>
+        <div class="drop-area" id="audioDrop">
+          <p>Drag & drop or click to upload</p>
+          <input type="file" id="audioInput" accept="audio/*" />
+        </div>
+        <select id="audioFormat">
+          <option value="">Convert to...</option>
+          <option value="mp3">MP3</option>
+          <option value="wav">WAV</option>
+        </select>
+        <button onclick="convertFile('audioInput', 'audioFormat')">Convert</button>
+      </div>
+      <div class="card" id="videoCard">
+        <h2>🎥 Video</h2>
+        <div class="drop-area" id="videoDrop">
+          <p>Drag & drop or click to upload</p>
+          <input type="file" id="videoInput" accept="video/*" />
+        </div>
+        <select id="videoFormat">
+          <option value="">Convert to...</option>
+          <option value="mp4">MP4</option>
+          <option value="webm">WebM</option>
+        </select>
+        <button onclick="convertFile('videoInput', 'videoFormat')">Convert</button>
+      </div>
+    </section>
+    <section class="features">
+ 
+  <div class="features-carousel" id="featuresCarousel">
+    <div class="feature-slide">
+      <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Multiple Formats">
+      <p>Convert between PDF, DOCX, TXT, MP3, MP4, and more effortlessly.</p>
+    </div>
+    <div class="feature-slide">
+      <img src="https://cdn-icons-png.flaticon.com/512/420/420140.png" alt="Drag & Drop">
+      <p>Drag and drop your files for a fast, smooth experience.</p>
+    </div>
+    <div class="feature-slide">
+      <img src="https://cdn-icons-png.flaticon.com/512/2306/2306154.png" alt="Offline Fast">
+      <p>No login or database needed. It works fast right from your browser.</p>
+    </div>
+  </div>
+</section>
+
+    <section class="info-blocks">
+      <div class="info-row">
+        <div class="info-text left">
+          <h3>Text Formats</h3>
+          <p>AllForms supports PDF, TXT, DOCX, and HTML formats. Easily convert between your notes, documents, and reports with accuracy and elegance.</p>
+        </div>
+        <div class="info-image right">
+          <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Text format icons" />
+        </div>
+      </div>
+
+      <div class="info-row reverse">
+        <div class="info-text right">
+          <h3>Audio Formats</h3>
+          <p>Convert audio files like MP3 and WAV seamlessly. Great for podcasts, lectures, or music. AllForms makes sound conversion quick and smooth.</p>
+        </div>
+        <div class="info-image left">
+          <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Audio format icons" />
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-text left">
+          <h3>Video Formats</h3>
+          <p>Convert video formats like MP4 and WebM without the hassle. Optimize for web or storage easily with AllForms.</p>
+        </div>
+        <div class="info-image right">
+          <img src="https://cdn-icons-png.flaticon.com/512/2781/2781813.png" alt="Video format icons" />
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <p>"In a world of endless formats, clarity is just one conversion away."</p>
+    </section>
+
+   
+
+
+    <footer class="footer">
+      <p>© 2025 Saira Shakeel</p>
+      <div class="socials">
+        <a href="https://github.com/sAIRAS2004" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/saira-shakeel" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
